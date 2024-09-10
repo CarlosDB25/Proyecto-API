@@ -1,13 +1,15 @@
 from API import api
 from UI import ui
 
-queryData = ui.getQueryData()
+def main():
+    queryData = ui.getQueryData()
 
-filteredResults_df = api.getData(queryData)
-soilData = api.getSoilData(filteredResults_df)
-resultsTable = api.dataTable(soilData)
+    filteredResults_df = api.getData(queryData)
+    soilData = api.getSoilData(filteredResults_df)
+    resultsTable = api.dataTable(soilData)
 
-ui.showData(resultsTable)
+    ui.showData(resultsTable)
 
 
-
+if __name__ == "__main__":
+    main()
