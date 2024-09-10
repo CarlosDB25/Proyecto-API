@@ -45,5 +45,3 @@ def dataTable(soilData):
         resultsTable[variable + '_mediana'] = medianas[variable]
 
     return resultsTable
-
-
